@@ -78,7 +78,7 @@ html {
     display: flex;
 }
 
-#navbar li {
+#navbar li a{
     display: flex;
     align-items: center;
 }
