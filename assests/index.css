@@ -79,6 +79,10 @@ html {
 }
 
 #navbar li {
+    display: flex;
+    align-items: center;
+}
+#navbar li {
     margin: 0px 15px;
     list-style-type: none;
     cursor: pointer;
@@ -101,7 +105,8 @@ html {
 #language .icon,
 #logn_in .icon,
 #navbar  li .icon {
-    font-size: 24px;   
+    font-size: 24px; 
+    margin: 10px;
 }
 #language .icon {
     line-height: 44px;
