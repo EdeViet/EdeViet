@@ -98,7 +98,7 @@
                 <div class="line"></div>
                 <div class="frame_content">
                     <?php
-                        require_once('connection.php');
+                        require_once('../connection.php');
                         $tu = $_GET["tu"];
                         $result = mysqli_query($conn, "SELECT * FROM test.dsds WHERE tu='$tu'");
                         $data = mysqli_fetch_array($result);
