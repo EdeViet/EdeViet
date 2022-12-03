@@ -1,12 +1,14 @@
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
 <title>Home</title>
 <link rel="stylesheet" href="search.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@538&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="..\assests\icon\themify-icons\themify-icons.css">
-<link rel="stylesheet" href="../assests/icon/cssgg.css">
+<link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
+<link rel="stylesheet" href="assests/icon/cssgg.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <div class="main">
@@ -59,7 +61,7 @@
         <div class="search">
                 <div class="header_search">
                     <input name="search" type="text" 
-                    placeholder="Tra cứu Việt-Êde" class="search_input"/>
+                    placeholder="Tra cứu Việt-Êde" id="search_input"class="search_input"/>
                     <div class="header_select">
                         <span class="header_search-select-label">Tiếng Việt</span>
                         <i class="ti-angle-down"></i>
@@ -70,18 +72,48 @@
                         </ul>
                     </div>
                 </div>
-                <button class="search_icon">
-                    <i class="ti-search"></i> 
-                </button>
+                <a href="search.php">
+                    <button type="submit" id="search_icon" class="search_icon" >
+                        <i class="ti-search"></i> 
+                    </button>
+                </a>
+                
+                <script>
+                    var input = document.getElementById("search_input");
+                    input.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault();
+                        document.getElementById("search_icon").click();
+                    }
+                    });
+                </script>
         </div>
         <div class="frame">
-            <div class="frame-word">sadasdsadsa</div>
-            <div class="line"></div>
-            <div class="frame_content">
+            <?php if (isset($_GET["tu"]))?>
+                <div class="frame-word"> <?php echo $_GET["tu"]; ?></div>
+                <div class="line"></div>
+                <div class="frame_content">
+            <?php
+                require_once('connection.php');
+                $tu = $_GET["tu"];
+                $result = mysqli_query($conn, "SELECT * FROM test.test WHERE tu='$tu'");
+                $data = mysqli_fetch_array($result);
+            ?> 
                 <div class="frame_content-means">
                     <div class="headline">Nghĩa:</div>
-                    <div class="text">dfsfsdf</div>
+                    <div class="text"> <?php echo $data['nghia1']; echo $data['nghia2']; echo $data['nghia3']; echo $data['nghia4']?></div>
                 </div>
+                
+                
+            
+            <!-- <script type="text/javascript">
+            $(function() {
+                $("#search_input").autocomplete({
+                    source: 'result_edeviet.php',
+                });
+            });
+            </script> -->
+                
                 <div class="line"></div>
                 <div class="frame_content-example">
                     <div class="headline">Ví dụ:</div>
@@ -90,6 +122,8 @@
             </div>
         </div>
     </div>
+
+
     <div id="news">
         <div class="container">
             <div class="header_title">
@@ -165,4 +199,7 @@
     </div>
 </div>
 </body>
+        
+</body>
+
 </html>
