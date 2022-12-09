@@ -1,12 +1,13 @@
 <html>
   <head>
 <title>Home</title>
-<link rel="stylesheet" href="assests\index.css">
+<link rel="stylesheet" href="keyboard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@538&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
 <link rel="stylesheet" href="assests\icon\cssgg.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -67,19 +68,60 @@
                         <p class="indt-content">Cảm ơn bạn đã lựa chọn chúng tôi!</p>
                     </div>
                     <p class="indt-content">Hãy nhập từ bạn muốn tra cứu <i class="icon ti-arrow-down"></i></p>
-                    <form action=""  class="input-1" method="POST" style=" display: flex;">
+                    <form action=""  class="input-1" method="POST">
                         <input name="search" type="text" 
                             placeholder="Tra cứu Việt-Êde" class="input"/>
-                            <imng class="icon" src="assests\icon\keyboard.png">
+                            <!-- <imng class="icon" src="assests\icon\keyboard.png"> -->
+                            <i class="fa fa-keyboard-o" style="font-size:36px; color: aliceblue; margin-left: 1rem;"></i> 
+                            <div class="keyboard_letters">
+                                <a>a</a> 
+                                <a>ă</a> 
+                                <a>â</a> 
+                                <a>b</a> 
+                                <a>ƀ</a> 
+                                <a>č</a> 
+                                <a>d</a> 
+                                <a>đ</a> 
+                                <a>e</a> 
+                                <a>ĕ</a> 
+                                <a>ê</a> 
+                                <a>ê̆</a> 
+                                <br>
+                                <a>g</a> 
+                                <a>h</a> 
+                                <a>i</a> 
+                                <a>ĭ</a> 
+                                <a>j</a> 
+                                <a>k</a> 
+                                <a>l</a> 
+                                <a>m</a> 
+                                <a>n</a> 
+                                <a>ñ</a> 
+                                <a>o</a> 
+                                <a>ơ</a> 
+                                <a>ŏ</a> 
+                                <br> 
+                                <a>ơ̆</a> 
+                                <a>ô</a> 
+                                <a>ô̆</a>
+                                <a>p</a> 
+                                <a>r</a> 
+                                <a>s</a> 
+                                <a>t</a> 
+                                <a>u</a>
+                                <a>ŭ</a> 
+                                <a>ư</a> 
+                                <a>ư̆</a> 
+                                <a>w</a>
+                                <a>y</a>
+                                <a id="arrowKeyboard" class="oup_icons"></a> <a id="arrowClose" class="oup_icons"></a>
+                            </div>
                             <button class="search_icon" >  
                                 <i class="ti-search"></i> 
                             </button>
                     </form>
                     
-                    <?php if(isset($_POST["search"])){ 
-                        $timkiem= $_POST["search"];
-                        include "change.php";}?> 
-
+                  
                     <div class="convert">
                         <div class="translate">
                             <p class="text">Tiếng Việt</p>

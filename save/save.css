@@ -151,6 +151,56 @@ html {
     font-size: 20px;
 }
 
+/* luu tu */
+.frame_save {
+    padding: 50px 20px;
+    color: black;
+}
+
+.frame_save select {
+    margin-left: 90%;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.frame_save .frame_save-content{
+    background-color: rgb(149, 255, 128);
+    height: 500px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.frame_save .frame_save-content .frame_headline {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.frame_save .frame_save-content .frame_save-content-box {
+    background-color: aqua;
+    width: 30%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.frame_save-content .frame_save-content-box .frame_save-content-box-headline {
+    font-size: 15px;
+}
+
+.frame_save-content .frame_save-content-box .frame_save-content-box-text {
+    font-size: 13px;
+}
+
+/* end web */
+
 #endweb {
     padding-top: 50px;
     padding-bottom: 30px;
