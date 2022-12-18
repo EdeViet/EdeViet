@@ -82,15 +82,24 @@
 
                     <div class="convert">
                         <div class="translate">
-                            <p class="text">Tiếng Việt</p>
+                            <p class="text from">Tiếng Việt</p>
                         </div>
                         <div class="icon_translate">
                             <i class="ti-arrows-horizontal"></i>
                         </div>
                         <div class="translate">
-                            <p class="text">Tiếng Êde</p>
+                            <p class="text to">Tiếng Êde</p>
                         </div>
                     </div>
+                    <script>
+                      document.querySelector("div.icon_translate").addEventListener('click', function(){
+                        let from=document.querySelector("p.from");
+                        let to=document.querySelector("p.to");
+                        let middleText=from.textContent;
+                        from.innerText=to.textContent;
+                        to.innerText=middleText;
+                      });
+                    </script>
                 </div>
             </div>
             <div id="form-2">
