@@ -180,15 +180,25 @@ html {
     
 }
 
-.frame_save .frame_save-content .frame_save-content-box {
+.frame_save .frame_save-content .frame-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    row-gap: 30px;
+}
+
+ .frame_save-content .frame-content .frame_save-content-box {
     background-color: aqua;
     width: 30%;
-    /* margin-right: auto;
-    margin-left: auto; */
     margin-top: 10px;
     padding: 10px;
     border-radius: 20px;
     padding-left: 15px;
+    width: calc(100%/5 - 16px);
+    /* margin: 0; */
+    margin-right: 7px;
+    margin-left: 8px;
+
 }
 
 .frame_save-content .frame_save-content-box .frame_save-content-box-headline {

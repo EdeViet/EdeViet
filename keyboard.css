@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-color: #fffffe;
     --headline: #094067;
     --text: #5f6c7b;
@@ -10,66 +10,79 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
     font-family: "Quicksand", sans-serif;
 }
+
 #main {
     display: flex;
     justify-content: center;
     min-width: 300px;
 }
-@media (max-width: 760px){
+
+@media (max-width: 760px) {
     #navbar li .text {
         display: none;
     }
-    #kobtdattenginx{
+
+    #kobtdattenginx {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    #form-1  {
+
+    #form-1 {
         width: 90%;
-        
+
     }
+
     #page #search .convert {
         width: 100%;
     }
+
     #page #search .convert {
         width: 76%;
     }
 }
-@media (min-width: 761px){
+
+@media (min-width: 761px) {
     #form-1 {
         width: 41.6667%;
     }
+
     #page #search .convert {
         width: 74%;
     }
-    #kobtdattenginx{
-    display: flex;
-    justify-content: space-around;
-}
+
+    #kobtdattenginx {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 
 #page {
-    background:  #181818 top center / cover no-repeat;
+    background: #181818 top center / cover no-repeat;
     width: 100%;
     min-height: 50vh;
     padding: 84px 0 60px 0;
     color: rgba(255, 255, 255, 0.8);
 }
+
 #header {
     height: 44px;
     position: fixed;
     top: 0;
-    padding: 20px 0px;;
+    padding: 20px 0px;
+    ;
     left: 0;
     right: 0;
     box-sizing: content-box;
     background: rgba(14, 29, 52, 0.9);
 }
+
 #container {
     display: flex;
     height: 44px;
@@ -95,7 +108,7 @@ html {
     color: #ffffff;
 }
 
-#header #logo a{
+#header #logo a {
     text-decoration: none;
 }
 
@@ -107,13 +120,15 @@ html {
 
 #language .icon,
 #logn_in .icon,
-#navbar  li .icon {
-    font-size: 24px; 
+#navbar li .icon {
+    font-size: 24px;
     margin: 10px;
 }
+
 #language .icon {
     line-height: 44px;
 }
+
 #navbar li a {
     display: flex;
     align-items: center;
@@ -121,7 +136,7 @@ html {
     color: rgba(255, 255, 255, 0.8);
 }
 
-#navbar li .text{
+#navbar li .text {
     font-size: 20px;
     text-decoration: none;
     line-height: 44px;
@@ -144,9 +159,10 @@ html {
     color: #ffffff;
 }
 
-#header #logn_in a{
+#header #logn_in a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);;
+    color: rgba(255, 255, 255, 0.8);
+    ;
 }
 
 #header #logn_in .sign_up,
@@ -163,13 +179,13 @@ html {
 
 /* tra cứu */
 #page #search {
-    
+
     margin-top: 10px;
 }
 
 #search .input-1 {
     display: flex;
-    align-items: center ;
+    align-items: center;
     position: relative;
 }
 
@@ -181,20 +197,46 @@ html {
     border: none;
     padding: 12px 16px;
     font-size: 16px;
-}   
+}
 
 #search .input-1 .keyboard_letters {
     background-color: #043636;
     position: absolute;
-    top: -40px;
-    /* display: flex; */
+    top: -145px;
+    display: flex;
     font-size: 15px;
+    padding: 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+
+
+.input-1 .keyboard_letters .text {
+    padding: 2px;
+    font-size: 17px;
+    border: 1px solid #c2fbfb;
+    margin: 5px 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    ;
+}
+
+.input-1 .keyboard_letters .text:hover {
+    background-color: #646464c9;
 }
 
 .input-1 .keyboard_letters a {
     margin: 5px 5px;
 
 }
+
 .input-1 .keyboard_letters a:hover {
     background-color: #969696;
 }
@@ -206,12 +248,12 @@ html {
     border: none;
     min-width: 42px;
     cursor: pointer;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 #search .search_icon .ti-search:hover,
 #page #search .search_icon:hover {
-    
+
     background-color: #e69363;
 }
 
@@ -225,16 +267,17 @@ html {
     float: left;
     margin-left: 15px;
     margin-right: 5px;
-    background-color:  #e69363;
+    background-color: #e69363;
     border-radius: 20px;
     padding: 7px 20px;
     color: #000000;
 }
+
 #page #search .icon_translate {
     float: left;
     margin-left: 15px;
     margin-right: 5px;
-    background-color:  #ffb183;
+    background-color: #ffb183;
     border-radius: 20px;
     padding: 7px 20px;
     cursor: pointer;
@@ -242,7 +285,7 @@ html {
 }
 
 #page #search .icon_translate:hover {
-    background-color:  #e29162;
+    background-color: #e29162;
 }
 
 #page #search .convert {
@@ -256,18 +299,19 @@ html {
 
 #search .icon_translate .ti-arrows-horizontal {
     font-size: 15px;
-    
+
 }
+
 .ti-exchange-vertical,
 #search .convert .text {
     font-size: 15px;
 }
 
-#form-1 #headline .headline-content{
+#form-1 #headline .headline-content {
     font-size: 50px;
     font-weight: 500;
     color: aliceblue;
-} 
+}
 
 #form-1 #search #indt .indt-content {
     font-size: 20px;
@@ -287,16 +331,18 @@ html {
 }
 
 #form-1 {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     min-width: 300px;
 }
+
 #form-2 {
-   /*  width: 50%; */
-   min-width: 300px;
-   width: 41.66666667%;
-} 
+    /*  width: 50%; */
+    min-width: 300px;
+    width: 41.66666667%;
+}
+
 #form-2 .image {
     width: 80%;
     min-width: 180px;
@@ -316,6 +362,7 @@ html {
     padding: 6px;
     cursor: pointer;
 }
+
 #alphabet #frames .table {
     display: flex;
 }
@@ -327,8 +374,8 @@ html {
 }
 
 #frames .table .text:hover .introduction {
-     display: none;   
-}      
+    display: none;
+}
 
 #alphabet .introduction {
     width: 41.66666667%;
@@ -349,7 +396,7 @@ html {
 
 #alphabet .introduction .text {
     font-size: 2.2rem;
-    margin-top: 2rem;  
+    margin-top: 2rem;
 }
 
 #alphabet .nghia {
@@ -364,12 +411,13 @@ html {
     font-size: 36px;
     text-align: center;
 }
+
 #alphabet .nghia .line {
     height: 1px;
     background-color: #0000007a;
 }
 
-#alphabet .nghia .list{
+#alphabet .nghia .list {
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -386,7 +434,8 @@ html {
 #news {
     padding: 30px 0;
 }
-#news .container{
+
+#news .container {
     margin: 0 auto;
     padding: 0 100px;
     width: 100%;
@@ -395,7 +444,7 @@ html {
     align-items: center;
 }
 
-.container .header_title{
+.container .header_title {
     width: 100%;
     text-align: center;
     display: flex;
@@ -405,12 +454,12 @@ html {
     border-bottom: 2px solid #112a2d;
 }
 
-.container .document_list{
+.container .document_list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 45px;
     justify-content: space-evenly;
-    
+
 }
 
 .document_list .document_item {
@@ -419,19 +468,19 @@ html {
     text-decoration: none;
 }
 
-.document_item .news_picture{
+.document_item .news_picture {
     flex: 1;
     /* position: relative; */
-     width: 100%;
-   /* height: 220px; */
+    width: 100%;
+    /* height: 220px; */
 }
 
-.document_item .news_picture img{
+.document_item .news_picture img {
     /* max-width: 100%;
     max-height: 100%; */
     object-fit: cover;
     /* height: 100%;*/
-    width: 100%; 
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -444,7 +493,8 @@ html {
     display: flex;
     flex-direction: column;
 }
-.document_content .document_tag-title b{
+
+.document_content .document_tag-title b {
     color: #0e0e0e;
     font-size: 17px;
     line-height: 20px;
@@ -487,7 +537,7 @@ html {
 #contact_us {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 #contact_us #information {
@@ -500,29 +550,29 @@ html {
     letter-spacing: 1px;
 }
 
-#contact_us #information .content{
+#contact_us #information .content {
     font-size: 1.4rem;
     line-height: 2.2rem;
     margin: 5px 0px;
-    
+
 }
 
-#contact_us #information .help{
+#contact_us #information .help {
     font-size: 23px;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
-#contact_us #information #hotline{
+#contact_us #information #hotline {
     display: flex;
 }
 
 
-#information #hotline .icon{
+#information #hotline .icon {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    font-size: 16px ;
+    font-size: 16px;
     font-weight: 700;
     border: 2px solid rgb(0 0 0 / 30%);
     display: flex;
@@ -533,24 +583,18 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
-#information #hotline .icon:hover{
+
+#information #hotline .icon:hover {
     border: 1px solid rgba(0, 0, 0, 0.753);
     padding: 3px;
 }
 
-#endweb #design{
-    padding-top: 20px ;
+#endweb #design {
+    padding-top: 20px;
 }
+
 #endweb #design .by {
     text-align: center;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.87);
-} 
-
-
-
-
-
-
-
-
+}

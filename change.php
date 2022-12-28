@@ -5,7 +5,7 @@ echo $timkiem;
 if (empty($timkiem)) {
     return;
 }else{
-    header("Location:search\search.php?tu=".$timkiem);
+    header("Location:search.php?tu=".$timkiem);
     header('Content-Type: text/html; charset=utf-8');
 }
 ?>

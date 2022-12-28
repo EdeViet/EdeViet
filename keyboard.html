@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
 <link rel="stylesheet" href="assests\icon\cssgg.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/eef555952d.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -71,54 +72,86 @@
                     <form action=""  class="input-1" method="POST">
                         <input name="search" type="text" 
                             placeholder="Tra cứu Việt-Êde" class="input"/>
-                            <!-- <imng class="icon" src="assests\icon\keyboard.png"> -->
-                            <i class="fa fa-keyboard-o" style="font-size:36px; color: aliceblue; margin-left: 1rem;"></i> 
                             <div class="keyboard_letters">
-                                <a>a</a> 
-                                <a>ă</a> 
-                                <a>â</a> 
-                                <a>b</a> 
-                                <a>ƀ</a> 
-                                <a>č</a> 
-                                <a>d</a> 
-                                <a>đ</a> 
-                                <a>e</a> 
-                                <a>ĕ</a> 
-                                <a>ê</a> 
-                                <a>ê̆</a> 
-                                <br>
-                                <a>g</a> 
-                                <a>h</a> 
-                                <a>i</a> 
-                                <a>ĭ</a> 
-                                <a>j</a> 
-                                <a>k</a> 
-                                <a>l</a> 
-                                <a>m</a> 
-                                <a>n</a> 
-                                <a>ñ</a> 
-                                <a>o</a> 
-                                <a>ơ</a> 
-                                <a>ŏ</a> 
-                                <br> 
-                                <a>ơ̆</a> 
-                                <a>ô</a> 
-                                <a>ô̆</a>
-                                <a>p</a> 
-                                <a>r</a> 
-                                <a>s</a> 
-                                <a>t</a> 
-                                <a>u</a>
-                                <a>ŭ</a> 
-                                <a>ư</a> 
-                                <a>ư̆</a> 
-                                <a>w</a>
-                                <a>y</a>
-                                <a id="arrowKeyboard" class="oup_icons"></a> <a id="arrowClose" class="oup_icons"></a>
+                                <div class="text" onclick="chen(value='a')">a</div> 
+                                <div class="text" onclick="chen(value='ă')">ă</div> 
+                                <div class="text" onclick="chen(value='â')">â</div> 
+                                <div class="text" onclick="chen(value='b')">b</div> 
+                                <div class="text" onclick="chen(value='ƀ')">ƀ</div> 
+                                <div class="text" onclick="chen(value='č')">č</div> 
+                                <div class="text" onclick="chen(value='d')">d</div> 
+                                <div class="text" onclick="chen(value='đ')">đ</div> 
+                                <div class="text" onclick="chen(value='e')">e</div> 
+                                <div class="text" onclick="chen(value='ĕ')">ĕ</div> 
+                                <div class="text" onclick="chen(value='ê')">ê</div> 
+                                <div class="text" onclick="chen(value='ê̆')">ê̆</div> 
+                                <!-- <br> -->
+                                <div class="text" onclick="chen(value='g')">g</div> 
+                                <div class="text" onclick="chen(value='h')">h</div> 
+                                <div class="text" onclick="chen(value='i')">i</div> 
+                                <div class="text" onclick="chen(value='ĭ')">ĭ</div> 
+                                <div class="text" onclick="chen(value='j')">j</div> 
+                                <div class="text" onclick="chen(value='k')">k</div> 
+                                <div class="text" onclick="chen(value='l')">l</div> 
+                                <div class="text" onclick="chen(value='m')">m</div> 
+                                <div class="text" onclick="chen(value='n')">n</div> 
+                                <div class="text" onclick="chen(value='ñ')">ñ</div> 
+                                <div class="text" onclick="chen(value='o')">o</div> 
+                                <div class="text" onclick="chen(value='ơ')">ơ</div> 
+                                <div class="text" onclick="chen(value='ŏ')">ŏ</div> 
+                                <!-- <br>  -->
+                                <div class="text" onclick="chen(value='ơ̆')">ơ̆</div> 
+                                <div class="text" onclick="chen(value='ô')">ô</div> 
+                                <div class="text" onclick="chen(value='ô̆')">ô̆</div>
+                                <div class="text" onclick="chen(value='p')">p</div> 
+                                <div class="text" onclick="chen(value='r')">r</div> 
+                                <div class="text" onclick="chen(value='s')">s</div> 
+                                <div class="text" onclick="chen(value='t')">t</div> 
+                                <div class="text" onclick="chen(value='u')">u</div>
+                                <div class="text" onclick="chen(value='ŭ')">ŭ</div> 
+                                <div class="text" onclick="chen(value='ư')">ư</div> 
+                                <div class="text" onclick="chen(value='ư̆')">ư̆</div> 
+                                <div class="text" onclick="chen(value='v')">v</div>
+                                <div class="text" onclick="chen(value='y')">y</div>
+                                <div class="text" onclick="upcase(check)" style="border: none;"><i class="gg-chevron-double-up-o"></i></div>
+                                
                             </div>
+                            <script>
+                                let check = 1;
+                                function upcase(){
+                                    
+                                    if (check === 1){
+                                        let letters = document.querySelectorAll("div.text");
+                                        let letters_length=letters.length;
+                                        
+                                        for (let i=0;i<letters_length;i++){
+                                            letters[i].innerHTML=letters[i].innerHTML.toUpperCase();
+                                        }
+                                        //document.getElementByClassName("gg-chevron-double-up-o").style.cssName = transform: rotate(95deg);";
+                                        return check = 0;
+                                    }else{
+                                        let letters = document.querySelectorAll("div.text");
+                                        let letters_length=letters.length;
+                                        
+                                        for (let i=0;i<letters_length;i++){
+                                            letters[i].innerHTML=letters[i].innerHTML.toLowerCase();
+                                        }
+                                        return check = 1;
+                                    }
+                                }
+
+                                function chen(){
+                                    if(check === 0){
+                                        document.getElementsByClassName('input').value += value.toUpperCase();
+                                    }else{
+                                        document.getElementsByClassName('input').value += value;
+                                    }
+                                }
+                            </script>
                             <button class="search_icon" >  
                                 <i class="ti-search"></i> 
                             </button>
+                            <i class="fa-regular fa-keyboard" style="font-size: 30px;margin-left: 10px;"></i>
                     </form>
                     
                   
@@ -288,3 +321,17 @@
 </div>
 </body>
 </html>
+<script>
+    let operand2 = '';
+let opt
+
+function buttondandler(btn) {
+    const pressedValue = btn.innerText
+
+    const resultInput = document.getElementsById('input')
+    if(isNaN(pressedValue)){
+        operand2 += pressedValue;
+        document.getElementsById('input') = operand2;
+    }
+}
+</script>
