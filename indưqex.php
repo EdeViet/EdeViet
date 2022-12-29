@@ -70,10 +70,10 @@
                         <p class="indt-content">Cảm ơn bạn đã lựa chọn chúng tôi!</p>
                     </div>
                     <p class="indt-content">Hãy nhập từ bạn muốn tra cứu <i class="icon ti-arrow-down"></i></p>
-                    <form action="" class="input-1" method="POST">
+                    <form action="" id="input-1" method="POST">
                         <input name="search" type="text" 
-                            placeholder="Tra cứu Việt-Êde" class="input"/>
-<!--                         
+                            placeholder="Tra cứu Việt-Êde" id="input"/>
+                        
                             <div class="keyboard_letters">
                                 <div class="text" onclick="chen(value='a')">a</div> 
                                 <div class="text" onclick="chen(value='ă')">ă</div> 
@@ -87,7 +87,7 @@
                                 <div class="text" onclick="chen(value='ĕ')">ĕ</div> 
                                 <div class="text" onclick="chen(value='ê')">ê</div> 
                                 <div class="text" onclick="chen(value='ê̆')">ê̆</div> 
-                                 <br> 
+                                <!-- <br> -->
                                 <div class="text" onclick="chen(value='g')">g</div> 
                                 <div class="text" onclick="chen(value='h')">h</div> 
                                 <div class="text" onclick="chen(value='i')">i</div> 
@@ -101,7 +101,7 @@
                                 <div class="text" onclick="chen(value='o')">o</div> 
                                 <div class="text" onclick="chen(value='ơ')">ơ</div> 
                                 <div class="text" onclick="chen(value='ŏ')">ŏ</div> 
-                                 <br> 
+                                <!-- <br>  -->
                                 <div class="text" onclick="chen(value='ơ̆')">ơ̆</div> 
                                 <div class="text" onclick="chen(value='ô')">ô</div> 
                                 <div class="text" onclick="chen(value='ô̆')">ô̆</div>
@@ -117,8 +117,8 @@
                                 <div class="text" onclick="chen(value='y')">y</div>
                                 <div class="text" onclick="upcase(check)" style="border: none;"><i class="gg-chevron-double-up-o"></i></div>
                                 
-                            </div> -->
-                            <!-- <script>
+                            </div>
+                            <script>
                                 let check = 1;
                                 function upcase(){
                                     
@@ -149,7 +149,7 @@
                                         document.getElementById('input').value += value;
                                     }
                                 }
-                            </script> -->
+                            </script>
 
                         <button class="search_icon" >  
                             <i class="ti-search"></i> 
@@ -191,47 +191,47 @@
     <div id="alphabet">
         <div id="frames">
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='a')">a</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ă')">ă</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='â')">â</p>
+                <p class="text" class="btn"  <?php $xuat = "a"?> onclick="xuat()">a</p>
+                <p class="text" class="btn" value="ă">ă</p>
+                <p class="text" class="btn" value="â">â</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='b')">b</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='c')">c</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='d')">d</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='đ')">đ</p>
+                <p class="text" class="btn" value="b">b</p>
+                <p class="text" class="btn" value="c">c</p>
+                <p class="text" class="btn" value="d">d</p>
+                <p class="text" class="btn" value="đ">đ</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='e')">e</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ê')">ê</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='g')">g</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='h')">h</p>
+                <p class="text" class="btn" value="e">e</p>
+                <p class="text" class="btn" value="ê">ê</p>
+                <p class="text" class="btn" value="g">g</p>
+                <p class="text" class="btn" value="h">h</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='i')">i</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='k')">k</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='l')">l</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='m')">m</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='n')">n</p>
+                <p class="text" class="btn" value="i">i</p>
+                <p class="text" class="btn" value="k">k</p>
+                <p class="text" class="btn" value="l">l</p>
+                <p class="text" class="btn" value="m">m</p>
+                <p class="text" class="btn" value="n">n</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='o')">o</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ô')">ô</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ơ')">ơ</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='p')">p</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='q')">q</p>
+                <p class="text" class="btn" value="o">o</p>
+                <p class="text" class="btn" value="ô">ô</p>
+                <p class="text" class="btn" value="ơ">ơ</p>
+                <p class="text" class="btn" value="p">p</p>
+                <p class="text" class="btn" value="q">q</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='r')">r</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='s')">s</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='t')">t</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='u')">u</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ư')">ư</p>
+                <p class="text" class="btn" value="r">r</p>
+                <p class="text" class="btn" value="s">s</p>
+                <p class="text" class="btn" value="t">t</p>
+                <p class="text" class="btn" value="u">u</p>
+                <p class="text" class="btn" value="ư">ư</p>
             </div>
             <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='v')">v</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='x')">x</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='y')">y</p>
+                <p class="text" class="btn" value="v">v</p>
+                <p class="text" class="btn" value="x">x</p>
+                <p class="text" class="btn" value="y">y</p>
             </div>
         </div>
         <script>
@@ -239,7 +239,7 @@
                 <?php
                     require_once('connection.php');
                     $conn->query("set names 'utf8'");
-                    $tu = $_GET["value"];
+                    $tu = $_GET["tu"];
                     $result = mysqli_query($conn, "SELECT * FROM u5lz3t7f_danhsachtu.list_tu WHERE tu='$tu'");
                     $data = mysqli_fetch_array($result);    
                     
