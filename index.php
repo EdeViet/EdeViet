@@ -159,12 +159,12 @@
             </div>
         </div>
         <script>
-            function xuat() {
+            function xuatchucai() {
                 <?php
                     require_once('connection.php');
                     $conn->query("set names 'utf8'");
                     $tu = $_GET["value"];
-                    $result = mysqli_query($conn, "SELECT * FROM u5lz3t7f_danhsachtu.list_tu WHERE tu='$tu'");
+                    $result = mysqli_query($conn, "SELECT * FROM edviecom_danhsachtu.noi_dung WHERE tu='$tu'");
                     $data = mysqli_fetch_array($result);    
                     
             ?>
@@ -173,6 +173,7 @@
            <?php }?>
             }
         </script>
+        
         <!-- <div class="introduction">
             <h2 class="headline">Chào mừng bạn đến với bảng chữ cái</h2>
             <p class="text">Hãy nhấp vào từ bạn muốn tìm hiểu</p>

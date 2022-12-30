@@ -1,8 +1,8 @@
 <?php
- $dbhost = '103.18.6.166';
- $dbuser = 'u5lz3t7f_edeviet';
+ $dbhost = '103.200.23.160';
+ $dbuser = 'edviecom_data';
  $dbpass = 'Ede^_Viet@13#01';
- $db = 'u5lz3t7f_danhsachtu';
+ $db = 'edviecom_danhsachtu';
  $conn = mysqli_connect($dbhost, $dbuser, $dbpass , $db) or die($conn); 
 
 

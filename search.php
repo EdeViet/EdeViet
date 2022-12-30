@@ -92,7 +92,7 @@
                         require_once('connection.php');
                         $conn->query("set names 'utf8'");
                         $tu = $_GET["tu"];
-                        $result = mysqli_query($conn, "SELECT * FROM u5lz3t7f_danhsachtu.list_tu WHERE tu='$tu'");
+                        $result = mysqli_query($conn, "SELECT * FROM edviecom_danhsachtu.noi_dung WHERE tu='$tu'");
                         $data = mysqli_fetch_array($result);
 
                         ?>
