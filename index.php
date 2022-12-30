@@ -195,7 +195,7 @@
                 <h2>Tin tức</h2>
             </div>
             <div class="document_list">
-                <a href="../news/post/su_thi_ede/post.php" class="document_item">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
                     <div class="news_picture">
                         <img src="news/post/su_thi_ede/danh.jpg" alt="">
                     </div>
@@ -207,26 +207,26 @@
                     </div>
                 </a>
 
-                <a href="" class="document_item">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
                     <div class="news_picture">
-                        <img src="https://gritcenter.edu.vn/storage/images/556b8a1351a04ab26523591c18f92cc5.jpeg" alt="">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
                     </div>
                     <div class="document_content">
                         <div class="document_tag-title">
-                            <b>hê sờ lô hê sờ ly ly</b>
-                            <div class="text">Trời hôm nay nhiều mày cực, đặt bàn tay mình lên ngực.  một hai ba bốn 5 sáu bảy tam</div>
+                            <b>Tóm tắt sử thi Đăm San</b>
+                            <div class="text">Sử thi Đăm Săn là một trong những thiên sử thi anh hùng nổi tiếng của dân tộc Ê Đê (Việt Nam). Tên đầy đủ là Bài ca chàng Đam San (tiếng Ê Dê là Klei khan Y Đam San).</div>
                         </div>
                     </div>
                 </a>
 
-                <a href="" class="document_item">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
                     <div class="news_picture">
-                        <img src="https://gritcenter.edu.vn/storage/images/556b8a1351a04ab26523591c18f92cc5.jpeg" alt="">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
                     </div>
                     <div class="document_content">
                         <div class="document_tag-title">
-                            <b>hê sờ lô hê sờ ly ly</b>
-                            <div class="text">Trời hôm nay nhiều mày cực, đặt bàn tay mình lên ngực.  một hai ba bốn 5 sáu bảy tam</div>
+                            <b>Tóm tắt sử thi Đăm San</b>
+                            <div class="text">Sử thi Đăm Săn là một trong những thiên sử thi anh hùng nổi tiếng của dân tộc Ê Đê (Việt Nam). Tên đầy đủ là Bài ca chàng Đam San (tiếng Ê Dê là Klei khan Y Đam San).</div>
                         </div>
                     </div>
                 </a>

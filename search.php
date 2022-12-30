@@ -138,50 +138,44 @@
                     <h2>Tin tức</h2>
                 </div>
                 <div class="document_list">
-                    <a href="" class="document_item">
-                        <div class="news_picture">
-                            <img src="https://gritcenter.edu.vn/storage/images/556b8a1351a04ab26523591c18f92cc5.jpeg"
-                                alt="">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
+                    <div class="news_picture">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
+                    </div>
+                    <div class="document_content">
+                        <div class="document_tag-title">
+                            <b>Tóm tắt sử thi Đăm San</b>
+                            <div class="text">Sử thi Đăm Săn là một trong những thiên sử thi anh hùng nổi tiếng của dân tộc Ê Đê (Việt Nam). Tên đầy đủ là Bài ca chàng Đam San (tiếng Ê Dê là Klei khan Y Đam San).</div>
                         </div>
-                        <div class="document_content">
-                            <div class="document_tag-title">
-                                <b> Haizzzz mệt mỏi ghê </b>
-                                <div class="text">Lo học js đi nha bạn Trần Thị Minh Ánh, bạn mà ko lo học là tôi đ*p
-                                    bạn đó</div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="" class="document_item">
-                        <div class="news_picture">
-                            <img src="https://gritcenter.edu.vn/storage/images/556b8a1351a04ab26523591c18f92cc5.jpeg"
-                                alt="">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
+                    <div class="news_picture">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
+                    </div>
+                    <div class="document_content">
+                        <div class="document_tag-title">
+                            <b>Tóm tắt sử thi Đăm San</b>
+                            <div class="text">Sử thi Đăm Săn là một trong những thiên sử thi anh hùng nổi tiếng của dân tộc Ê Đê (Việt Nam). Tên đầy đủ là Bài ca chàng Đam San (tiếng Ê Dê là Klei khan Y Đam San).</div>
                         </div>
-                        <div class="document_content">
-                            <div class="document_tag-title">
-                                <b>Haizz...zzzz mệt mỏi ghê</b>
-                                <div class="text">Lo học js đi nha bạn Trần Thị Minh Ánh, bạn mà ko lo học là tôi đ*p
-                                    bạn đó</div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="" class="document_item">
-                        <div class="news_picture">
-                            <img src="https://gritcenter.edu.vn/storage/images/556b8a1351a04ab26523591c18f92cc5.jpeg"
-                                alt="">
+                <a href="news/post/su_thi_ede/post.html" class="document_item">
+                    <div class="news_picture">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
+                    </div>
+                    <div class="document_content">
+                        <div class="document_tag-title">
+                            <b>Tóm tắt sử thi Đăm San</b>
+                            <div class="text">Sử thi Đăm Săn là một trong những thiên sử thi anh hùng nổi tiếng của dân tộc Ê Đê (Việt Nam). Tên đầy đủ là Bài ca chàng Đam San (tiếng Ê Dê là Klei khan Y Đam San).</div>
                         </div>
-                        <div class="document_content">
-                            <div class="document_tag-title">
-                                <b>Haizz...zzzz mệt mỏi ghê</b>
-                                <div class="text">Lo học js đi nha bạn Trần Thị Minh Ánh, bạn mà ko lo học là tôi đ*p
-                                    bạn đó</div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+                </a>
                 </div>
                 <button class="more-news_button">
-                    <a href="" class="more-news_title" style="text-decoration: none;">Xem thêm</a>
+                    <a href="news/read/news.html" class="more-news_title" style="text-decoration: none;">Xem thêm</a>
                     <i class="ti-angle-right" style="padding-left: 3px;"></i>
                 </button>
             </div>
@@ -202,9 +196,9 @@
                     <div class="content">Địa chỉ: 45 Thủ Khoa Huân, Thành phố Buôn Ma Thuột, tỉnh Đắk Lắk, Việt Nam
                     </div>
                     <div id="hotline">
-                        <img src="..\\assests\icon\Facebook_icon.png" alt="" class="icon">
-                        <img src="..\\assests\icon\Instagram_icon.png" alt="" class="icon">
-                        <img src="..\\assests\icon\Zalo_icon.png" alt="" class="icon">
+                        <img src="assests\icon\Facebook_icon.png" alt="" class="icon">
+                        <img src="assests\icon\Instagram_icon.png" alt="" class="icon">
+                        <img src="assests\icon\Zalo_icon.png" alt="" class="icon">
                     </div>
                 </div>
             </div>
