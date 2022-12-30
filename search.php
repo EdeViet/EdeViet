@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>search</title>
     <link rel="stylesheet" href="search.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@538&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assests\icon\themify-icons\themify-icons.css">
-    <link rel="stylesheet" href="../assests/icon/cssgg.css">
+    <link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
+    <link rel="stylesheet" href="assests/icon/cssgg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
@@ -20,13 +20,13 @@
                 <div id="container">
                     <ul id="navbar">
                         <li>
-                            <a href="../index.php">
+                            <a href="index.php">
                                 <i class="icon ti-home"></i>
                                 <span class="text">Trang chủ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="..\news\read\news.html">
+                            <a href="news\read\news.html">
                                 <i class="icon ti-ink-pen"></i>
                                 <span class="text">Tin tức</span>
                             </a>
@@ -39,26 +39,26 @@
                         </li>
                     </ul>
                     <div id="logo">
-                        <a href="../index.php">
+                        <a href="index.php">
                             <h1 class="text">EdVie</h1>
                         </a>
                     </div>
                     <!--    cuối header -->
                     <div id="end_nav">
-                        <div id="logn_in">
-                            <i class="icon ti-user"></i>
-                            <a href="/sign in/signin.html">
-                                <span class="sign_in">Đăng nhập</span>
-                            </a>
-                            <span class="line">/</span>
-                            <a href="/sign up/signup.html">
-                                <span class="sign_up">Đăng ký</span>
-                            </a>
-                        </div>
-                        <div id="language">
-                            <i class="icon ti-world"></i>
-                        </div>
+                    <div id="logn_in">
+                        <i class="icon ti-user"></i>
+                        <a href="/sign in\signin.html">
+                            <span class="sign_in">Đăng nhập</span>
+                        </a>
+                        <span class="line">/</span>
+                        <a href="/sign up\signup.html">
+                            <span class="sign_up">Đăng ký</span>
+                        </a>
                     </div>
+                    <div id="language">
+                        <i class="icon ti-world"></i>
+                    </div>
+                </div>
                 </div>
             </div>
             <form action="" class="search" method="POST"

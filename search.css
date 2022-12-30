@@ -12,10 +12,49 @@ html {
     justify-content: center;
     min-width: 300px;
 }
-@media (max-width: 760px){
+
+
+@media (min-width: 901px){
+    .search .header_search .input {
+        width: 72%;
+        min-width: 200px;
+    }   
+    
+    .search .header_search {
+        width: 50%;
+    }  
+}
+
+@media (max-width: 900px){
+    .search .header_search {
+        width: 70%;
+    }
+    .search .header_search .input {
+        width: 60%;
+    }
+    #end_nav #logn_in a, #end_nav .line {
+        display: none;
+    }
+}
+@media (max-width: 570px){
+    #page .frame {
+        margin: 0 30px;
+    }
     #navbar li .text {
         display: none;
     }
+}
+
+@media (min-width: 570px){
+    #page .frame {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+
+@media (max-width: 760px){
+     
+
     #kobtdattenginx{
         display: flex;
         flex-direction: column-reverse;
@@ -31,6 +70,7 @@ html {
     #page #search .convert {
         width: 76%;
     }
+    
 }
 @media (min-width: 761px){
     #form-1 {
@@ -102,6 +142,7 @@ html {
 #logn_in .icon,
 #navbar  li .icon {
     font-size: 24px;   
+    line-height: 44px;
 }
 #language .icon {
     line-height: 44px;
@@ -165,8 +206,6 @@ html {
 
 .search .header_search .input {
     min-height: 42px;
-    width: 72%;
-    min-width: 200px;
     border: none;
     font-size: 16px;
     outline: none;
@@ -177,7 +216,6 @@ html {
     background-color: #836262;
     align-items: center;
     color: black;
-    width: 50%;
     border: 1px solid #ffffff;
     border-radius: 25px;
     background-color: #ffffff;
@@ -232,8 +270,6 @@ html {
     max-width: 500px;
     background-color: aqua;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     color: #0e0e0e;
     padding: 5px;
     border-radius: 10px;

@@ -46,11 +46,11 @@
                 <div id="end_nav">
                     <div id="logn_in">
                         <i class="icon ti-user"></i>
-                        <a href="../sign in\signin.html">
+                        <a href="/sign in\signin.html">
                             <span class="sign_in">Đăng nhập</span>
                         </a>
                         <span class="line">/</span>
-                        <a href="../sign up\signup.html">
+                        <a href="/sign up\signup.html">
                             <span class="sign_up">Đăng ký</span>
                         </a>
                     </div>
@@ -114,65 +114,54 @@
     </div>
     <div id="alphabet">
         <div id="frames">
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='a')">a</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ă')">ă</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='â')">â</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='b')">b</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='c')">c</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='d')">d</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='đ')">đ</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='e')">e</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ê')">ê</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='g')">g</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='h')">h</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='i')">i</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='k')">k</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='l')">l</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='m')">m</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='n')">n</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='o')">o</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ô')">ô</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ơ')">ơ</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='p')">p</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='q')">q</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='r')">r</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='s')">s</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='t')">t</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='u')">u</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='ư')">ư</p>
-            </div>
-            <div class="table">
-                <p class="text" class="btn" onclick = "xuatchucai(value='v')">v</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='x')">x</p>
-                <p class="text" class="btn" onclick = "xuatchucai(value='y')">y</p>
-            </div>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="a">a</p>
+                <p class="text" name="btn" value="ă">ă</p>
+                <p class="text" name="btn" value="â">â</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="b">b</p>
+                <p class="text" name="btn" value="c">c</p>
+                <p class="text" name="btn" value="d">d</p>
+                <p class="text" name="btn" value="đ">đ</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" class="btn" value='e'>e</p>
+                <p class="text" name="btn" value="ê">ê</p>
+                <p class="text" name="btn" value="g">g</p>
+                <p class="text" name="btn" value="h">h</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="i">i</p>
+                <p class="text" name="btn" value="k">k</p>
+                <p class="text" name="btn" value="l">l</p>
+                <p class="text" name="btn" value="m">m</p>
+                <p class="text" name="btn" value="n">n</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="o">o</p>
+                <p class="text" name="btn" value="ô">ô</p>
+                <p class="text" name="btn" value="ơ">ơ</p>
+                <p class="text" name="btn" value="p">p</p>
+                <p class="text" name="btn" value="q">q</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="r">r</p>
+                <p class="text" name="btn" value="s">s</p>
+                <p class="text" name="btn" value="t">t</p>
+                <p class="text" name="btn" value="u">u</p>
+                <p class="text" name="btn" value="ư">ư</p>
+            </form>
+            <form action="" method="post" class="table">
+                <p class="text" name="btn" value="v">v</p>
+                <p class="text" name="btn" value="x">x</p>
+                <p class="text" name="btn" value="y">y</p>
+            </form>
         </div>
-        <script>
-            function xuatchucai() {
-                <?php
-                    require_once('connection.php');
-                    $conn->query("set names 'utf8'");
-                    $tu = $_GET["value"];
-                    $result = mysqli_query($conn, "SELECT * FROM edviecom_danhsachtu.noi_dung WHERE tu='$tu'");
-                    $data = mysqli_fetch_array($result);    
-                    
-            ?>
-                <?php if (isset($_GET["tu"])){?>
-                alert ("<?php echo $xuat; ?>");
-           <?php }?>
-            }
-        </script>
+        <?php if(isset($_POST["btn"])){
+            echo $_GET["value"];
+        }
+        ?>
         
         <!-- <div class="introduction">
             <h2 class="headline">Chào mừng bạn đến với bảng chữ cái</h2>
@@ -208,7 +197,7 @@
             <div class="document_list">
                 <a href="../news/post/su_thi_ede/post.php" class="document_item">
                     <div class="news_picture">
-                        <img src="../news/post/su_thi_ede/danh.jpg" alt="">
+                        <img src="news/post/su_thi_ede/danh.jpg" alt="">
                     </div>
                     <div class="document_content">
                         <div class="document_tag-title">

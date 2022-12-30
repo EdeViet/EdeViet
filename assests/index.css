@@ -19,10 +19,55 @@ html {
     justify-content: center;
     min-width: 300px;
 }
-@media (max-width: 760px){
+
+@media (min-width: 901px){
+    .search .header_search .input {
+        width: 72%;
+        min-width: 200px;
+    }   
+    
+    .search .header_search {
+        width: 50%;
+    }  
+}
+
+@media (max-width: 900px){
+    .search .header_search {
+        width: 70%;
+    }
+    .search .header_search .input {
+        width: 60%;
+    }
+    #end_nav #logn_in a, #end_nav .line {
+        display: none;
+    }
+}
+@media (max-width: 570px){
+    #page .frame {
+        margin: 0 30px;
+    }
     #navbar li .text {
         display: none;
     }
+    #navbar li {
+        margin: 0px 5px;
+    }
+}
+
+@media (min-width: 570px){
+    #page .frame {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    #navbar li {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 760px){
+    
+   
+
     #kobtdattenginx{
         display: flex;
         flex-direction: column-reverse;
@@ -38,13 +83,7 @@ html {
     #page #search .convert {
         width: 76%;
     }
-    #alphabet {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }   
-
+    
 }
 @media (min-width: 761px){
     #form-1 {
@@ -93,7 +132,7 @@ html {
 }
 
 #navbar li {
-    margin: 0px 15px;
+    
     list-style-type: none;
     cursor: pointer;
 }
