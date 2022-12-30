@@ -1,7 +1,6 @@
 <?php
 
 // $search = $_POST['submit'];
-echo $timkiem;
 if (empty($timkiem)) {
     return;
 }else{
