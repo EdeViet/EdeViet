@@ -84,10 +84,9 @@
                 </button>
             </form>
             <div class="frame">
-                <?php if (isset($_GET["tu"])) { ?>
+                
                 <div class="frame-word"> <?php echo $_GET["tu"]; ?></div>
                 <div class="line"></div>
-                <div class="frame_content">
                     <?php
                         require_once('connection.php');
                         $conn->query("set names 'utf8'");
@@ -96,40 +95,40 @@
                         $data = mysqli_fetch_array($result);
 
                         ?>
-
-
-                    <div class="frame_content-means">
-
-                        <div class="headline">Nghĩa:</div>
-                        <div class="text"> <?= $data['nghia_1'] ?></div>
-                        <?php if ($data['nghia_2'] !== "") { ?>
-                        <div class="text"> <?= $data['nghia_2'] ?></div>
-                        <?php } ?>
-                        <?php if ($data['nghia_3'] !== "") { ?>
-                        <div class="text"> <?= $data['nghia_3'] ?></div>
-                        <?php } ?>
-                        <?php if ($data['nghia_4'] !== "") { ?>
-                        <div class="text"> <?= $data['nghia_4'] ?></div>
-                        <?php } ?>
-
-                    </div>
-                    <div class="line"></div>
-                    <div class="frame_content-example">
-                        <div class="headline">Ví dụ:</div>
+                <div class="frame_content">
+                    <?php if ($data['nghia_1'] !=="") { ?>
+                        <div class="frame_content-means">
+                            <div class="headline">Nghĩa:</div>
+                            <div class="text"> <?= $data['nghia_1'] ?></div>
+                            <?php if ($data['nghia_2'] !== "") { ?>
+                            <div class="text"> <?= $data['nghia_2'] ?></div>
+                            <?php } ?>
+                            <?php if ($data['nghia_3'] !== "") { ?>
+                            <div class="text"> <?= $data['nghia_3'] ?></div>
+                            <?php } ?>
+                            <?php if ($data['nghia_4'] !== "") { ?>
+                            <div class="text"> <?= $data['nghia_4'] ?></div>
+                            <?php } ?>
+                        </div>
+                        <div class="line"></div>
                         <?php if ($data['cau_vd_1'] !== "") { ?>
-                        <div class="text"> <?php echo $data['cau_vd_1'] ?>: <?php echo $data['nghia_cau_vd_1'] ?></div>
-                        <?php } ?>
-                        <?php if ($data['cau_vd_2'] !== "") { ?>
-                        <div class="text"> <?php echo $data['cau_vd_2'] ?>: <?php echo $data['nghia_cau_vd_2'] ?></div>
-                        <?php } ?>
-                        <?php if ($data['cau_vd_3'] !== "") { ?>
-                        <div class="text"> <?php echo $data['cau_vd_3'] ?>: <?php echo $data['nghia_cau_vd_3'] ?></div>
-                        <?php } ?>
-                    </div>
+                            <div class="frame_content-example">
+                                <div class="headline">Ví dụ:</div>
+                                <div class="text"> <?php echo $data['cau_vd_1'] ?>: <?php echo $data['nghia_cau_vd_1'] ?></div>     
+                                <?php if ($data['cau_vd_2'] !== "") { ?>
+                                <div class="text"> <?php echo $data['cau_vd_2'] ?>: <?php echo $data['nghia_cau_vd_2'] ?></div>
+                                <?php } ?>
+                                <?php if ($data['cau_vd_3'] !== "") { ?>
+                                <div class="text"> <?php echo $data['cau_vd_3'] ?>: <?php echo $data['nghia_cau_vd_3'] ?></div>
+                                <?php } ?>
+                            </div>
+                    <?php }else{
+                        echo "Không có ví dụ cho từ này";
+                    } ?>
+                    <?php } else {
+                        echo "Xin lỗi chúng tôi không tìm thấy từ bạn cần tìm";
+                    } ?>
                 </div>
-                <?php } else {
-                    echo "Xin lỗi chúng tôi không tìm thấy từ bạn cần tìm";
-                } ?>
             </div>
         </div>
         <div id="news">
