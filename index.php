@@ -1,17 +1,17 @@
 <html>
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link rel="stylesheet" href="assests\index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@538&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
-<link rel="stylesheet" href="assests\icon\cssgg.css">
-<script src="https://kit.fontawesome.com/eef555952d.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="assests\index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@538&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assests\icon\themify-icons\themify-icons.css">
+        <link rel="stylesheet" href="assests\icon\cssgg.css">
+        <script src="https://kit.fontawesome.com/eef555952d.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 <body>
 <div class="main">
     <div id="page">
@@ -78,7 +78,7 @@
                         <button class="search_icon" >  
                             <i class="ti-search"></i> 
                         </button>
-                        <i class="fa-regular fa-keyboard" style="font-size: 30px;margin-left: 10px;"></i>
+                        <i class="fa-regular fa-keyboard" style="font-size: 30px; margin-left: 10px;"></i>
                     </form>
                     
                     <?php if(isset($_POST["search"])){ 
