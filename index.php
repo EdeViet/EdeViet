@@ -72,13 +72,111 @@
                     <p class="indt-content">Hãy nhập từ bạn muốn tra cứu <i class="icon ti-arrow-down"></i></p>
                     <form action="" class="input-1" method="POST">
                         <input name="search" type="text" 
-                            placeholder="Tra cứu Việt-Êde" class="input"/>
-
+                            placeholder="Tra cứu Việt-Êde" class="input" id="input"/>
 
                         <button class="search_icon" >  
                             <i class="ti-search"></i> 
                         </button>
-                        <i class="fa-regular fa-keyboard" style="font-size: 30px; margin-left: 10px;"></i>
+                                <div  id="myDropdown" class="keyboard_letters">
+                                    <div class="text" onclick="chen(value='a')">a</div> 
+                                    <div class="text" onclick="chen(value='ă')">ă</div> 
+                                    <div class="text" onclick="chen(value='â')">â</div> 
+                                    <div class="text" onclick="chen(value='b')">b</div> 
+                                    <div class="text" onclick="chen(value='ƀ')">ƀ</div> 
+                                    <div class="text" onclick="chen(value='č')">č</div> 
+                                    <div class="text" onclick="chen(value='d')">d</div> 
+                                    <div class="text" onclick="chen(value='đ')">đ</div> 
+                                    <div class="text" onclick="chen(value='e')">e</div> 
+                                    <div class="text" onclick="chen(value='ĕ')">ĕ</div> 
+                                    <div class="text" onclick="chen(value='ê')">ê</div> 
+                                    <div class="text" onclick="chen(value='ê̆')">ê̆</div> 
+                                    <!-- <br> -->
+                                    <div class="text" onclick="chen(value='g')">g</div> 
+                                    <div class="text" onclick="chen(value='h')">h</div> 
+                                    <div class="text" onclick="chen(value='i')">i</div> 
+                                    <div class="text" onclick="chen(value='ĭ')">ĭ</div> 
+                                    <div class="text" onclick="chen(value='j')">j</div> 
+                                    <div class="text" onclick="chen(value='k')">k</div> 
+                                    <div class="text" onclick="chen(value='l')">l</div> 
+                                    <div class="text" onclick="chen(value='m')">m</div> 
+                                    <div class="text" onclick="chen(value='n')">n</div> 
+                                    <div class="text" onclick="chen(value='ñ')">ñ</div> 
+                                    <div class="text" onclick="chen(value='o')">o</div> 
+                                    <div class="text" onclick="chen(value='ơ')">ơ</div> 
+                                    <div class="text" onclick="chen(value='ŏ')">ŏ</div> 
+                                    <!-- <br>  -->
+                                    <div class="text" onclick="chen(value='ơ̆')">ơ̆</div> 
+                                    <div class="text" onclick="chen(value='ô')">ô</div> 
+                                    <div class="text" onclick="chen(value='ô̆')">ô̆</div>
+                                    <div class="text" onclick="chen(value='p')">p</div> 
+                                    <div class="text" onclick="chen(value='r')">r</div> 
+                                    <div class="text" onclick="chen(value='s')">s</div> 
+                                    <div class="text" onclick="chen(value='t')">t</div> 
+                                    <div class="text" onclick="chen(value='u')">u</div>
+                                    <div class="text" onclick="chen(value='ŭ')">ŭ</div> 
+                                    <div class="text" onclick="chen(value='ư')">ư</div> 
+                                    <div class="text" onclick="chen(value='ư̆')">ư̆</div> 
+                                    <div class="text" onclick="chen(value='v')">v</div>
+                                    <div class="text" onclick="chen(value='y')">y</div>
+                                    <div class="text" onclick="upcase(check)" style="border: none;"><i class="gg-chevron-double-up-o"></i></div> 
+                                </div>
+                                <button class="icon_keyboard" onclick="appear()">
+
+                                    <i  class="fa-regular fa-keyboard" style="font-size: 30px; margin-left: 10px;"></i>
+                                </button>
+
+                            <script>
+
+                                function appear() {
+                                    document.getElementById("myDropdown").classList.toggle("show");
+                                }
+
+                                // Close the dropdown menu if the user clicks outside of it
+                                window.onclick = function(event) {
+                                    if (!event.target.matches('.icon_keyboard')) {
+                                        var dropdowns = document.getElementsByClassName("keyboard_letters");
+                                        var i;
+                                        for (i = 0; i < dropdowns.length; i++) {
+                                            var openDropdown = dropdowns[i];
+                                            if (openDropdown.classList.contains('show')) {
+                                                openDropdown.classList.remove('show');
+                                            }
+                                        }
+                                    }
+                                }
+
+                                
+                                let check = 1;
+                                function upcase(){
+                                    
+                                    if (check === 1){
+                                        let letters = document.querySelectorAll("div.text");
+                                        let letters_length=letters.length;
+                                        
+                                        for (let i=0;i<letters_length;i++){
+                                            letters[i].innerHTML=letters[i].innerHTML.toUpperCase();
+                                        }
+                                        //document.getElementByClassName("gg-chevron-double-up-o").style.cssName = transform: rotate(95deg);";
+                                        return check = 0;
+                                    }else{
+                                        let letters = document.querySelectorAll("div.text");
+                                        let letters_length=letters.length;
+                                        
+                                        for (let i=0;i<letters_length;i++){
+                                            letters[i].innerHTML=letters[i].innerHTML.toLowerCase();
+                                        }
+                                        return check = 1;
+                                    }
+                                }
+
+                                function chen(){
+                                    if(check === 0){
+                                        document.getElementById('input').value += value.toUpperCase();
+                                    }else{
+                                        document.getElementById('input').value += value;
+                                    }
+                                }
+                            </script>
                     </form>
                     
                     <?php if(isset($_POST["search"])){ 
@@ -248,7 +346,7 @@
             <div id="information">
                 <div class="help">Liên hệ chúng tôi</div>
                 <div class="content">Điện thoại: 0373898814</div>
-                <div class="content">Email: tranthiminhanh@gmail.com</div>
+                <div class="content">Email: edeviet@ed-vie.com</div>
                 <div class="content">Địa chỉ: 45 Thủ Khoa Huân, Thành phố Buôn Ma Thuột, tỉnh Đắk Lắk, Việt Nam</div>
                 <div id="hotline">
                     <img src="assests\icon\Facebook_icon.png" alt="" class="icon">

@@ -71,7 +71,7 @@
                     <p class="indt-content">Hãy nhập từ bạn muốn tra cứu <i class="icon ti-arrow-down"></i></p>
                     <form action=""  class="input-1" method="POST">
                         <input name="search" type="text" 
-                            placeholder="Tra cứu Việt-Êde" class="input"/>
+                            placeholder="Tra cứu Việt-Êde" id="input"/>
                             <div class="keyboard_letters">
                                 <div class="text" onclick="chen(value='a')">a</div> 
                                 <div class="text" onclick="chen(value='ă')">ă</div> 
@@ -142,9 +142,9 @@
 
                                 function chen(){
                                     if(check === 0){
-                                        document.getElementsByClassName('input').value += value.toUpperCase();
+                                        document.getElementById('input').value += value.toUpperCase();
                                     }else{
-                                        document.getElementsByClassName('input').value += value;
+                                        document.getElementById('input').value += value;
                                     }
                                 }
                             </script>

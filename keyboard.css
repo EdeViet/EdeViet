@@ -209,6 +209,7 @@ html {
     max-width: 500px;
     flex-wrap: wrap;
     border-radius: 10px;
+    /* display: none; */
 }
 
 

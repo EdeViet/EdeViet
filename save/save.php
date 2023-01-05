@@ -1,8 +1,5 @@
 
-<?php 
-require_once('../connection.php');
-$lay=$conn->query("SELECT * FROM luu")->fetch_array();
-?>
+
 
 <html>
   <head>
@@ -105,16 +102,26 @@ $lay=$conn->query("SELECT * FROM luu")->fetch_array();
 
            
                 <div class="frame-content"> 
-                    <?php foreach($conn->query("SELECT * FROM `luu`") as $lay){?>
+                   
                     <div class="frame_save-content-box">
-                        <h3 class="frame_save-content-box-headline"><?php echo($lay['tu']);?></h3>
+                        <h3 class="frame_save-content-box-headline">Alo</h3>
                         <div class="frame-text"></div>
                         <div class="frame_save-content-box-text">
-                            <div class="means"><?php echo($lay['nghia']);?></div>
-                            <div class="example"><?php echo($lay['vd']);?></div>
+                            <div class="means">Alo</div>
+                            <div class="example">Alô, đồng bào chú ý: A lô, buôn sang bi mđing</div>
                         </div> 
                     </div>
-                    <?php }?>
+                    <div class="frame_save-content-box">
+                        <h3 class="frame_save-content-box-headline">Xin chào</h3>
+                        <div class="frame-text"></div>
+                        <div class="frame_save-content-box-text">
+                            <div class="means">Kkuh
+</div>
+                            <div class="example">Học sinh chào thầy giáo: Hđeh hriăm hră kkuh nai mtô</div>
+                        </div> 
+                    </div>
+
+                   
                 </div>
             </div>
         </div>

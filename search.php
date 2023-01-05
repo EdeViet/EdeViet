@@ -93,7 +93,6 @@
                         $tu = $_GET["tu"];
                         $result = mysqli_query($conn, "SELECT * FROM edviecom_danhsachtu.noi_dung WHERE tu='$tu'");
                         $data = mysqli_fetch_array($result);
-
                         ?>
                 <div class="frame_content">
                     <?php if ($data['nghia_1'] !=="") { ?>

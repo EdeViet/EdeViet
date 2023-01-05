@@ -227,21 +227,27 @@ html {
     border: none;
     padding: 12px 16px;
     font-size: 16px;
-}   
+}  
 
-#search .input-1 .keyboard_letters {
+
+
+ .keyboard_letters {
     background-color: #043636;
     position: absolute;
+    display: flex ;
     top: -145px;
-    display: flex; 
+    right: -10px;
     font-size: 15px;
     padding: 10px;
     max-width: 500px;
     flex-wrap: wrap;
     border-radius: 10px;
+    display: none;
 }
+.show {display: block;}
 
-.input-1 .keyboard_letters .text {
+
+ .keyboard_letters .text {
     padding: 2px;
     font-size: 17px;
     border: 1px solid #c2fbfb ;
