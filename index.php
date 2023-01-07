@@ -191,7 +191,7 @@
                             <i class="ti-arrows-horizontal"></i>
                         </div>
                         <div class="translate">
-                            <p class="text from" >Tiếng Êde</p>
+                            <p class="text from" >Tiếng Êđê</p>
                         </div>
                     </div>
                     <script>
@@ -345,7 +345,7 @@
             </div>
             <div id="information">
                 <div class="help">Liên hệ chúng tôi</div>
-                <div class="content">Điện thoại: 0373898814</div>
+                <div class="content">Điện thoại: 0373898814 - 0934737456</div>
                 <div class="content">Email: edeviet@ed-vie.com</div>
                 <div class="content">Địa chỉ: 45 Thủ Khoa Huân, Thành phố Buôn Ma Thuột, tỉnh Đắk Lắk, Việt Nam</div>
                 <div id="hotline">
